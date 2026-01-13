@@ -6,6 +6,8 @@ My personal Python-based analytics code vaults accumulated from prior projects, 
 
 General Python data analysis patterns that I routinely use in my work.
 
+Also used GitHub Copilot autocomplete for comments and code not directly related to core logic or context
+
 I also had informal technical discussions with:
 
 Ankith — Software Engineer at PayPal, primarily around Python code structuring and modularization practices.
