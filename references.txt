@@ -1,0 +1,13 @@
+References & Acknowledgements
+
+During development, I referenced:
+
+My personal Python-based analytics code vaults accumulated from prior projects, primarily for structuring reusable functions and handling real-world data issues.
+
+General Python data analysis patterns that I routinely use in my work.
+
+I also had informal technical discussions with:
+
+Ankith — Software Engineer at PayPal, primarily around Python code structuring and modularization practices.
+
+Rahman — R&D Intern at Corteva Agriscience, primarily around sanity-checking aggregations and validating interpretation of results.
