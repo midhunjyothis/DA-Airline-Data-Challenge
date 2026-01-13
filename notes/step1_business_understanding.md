@@ -1,53 +1,53 @@
-# Step 1 — Business Understanding
+# Step 1 : Business Understanding
 
 ## Business Question
 An airline plans to enter the US domestic market by launching **five round-trip routes** between **medium and large airports**.  
-Each round-trip route requires **one dedicated aircraft**, with an **upfront cost of $90 million per aircraft**.
+Each route requires **one dedicated aircraft**, with an **upfront cost of $90M per aircraft**.
 
-Using **1Q2019 flight, ticket, and airport data**, the objective is to determine which five round-trip routes the airline should invest in, given that the company’s brand promise is **“On time, for you.”**
+Using **1Q2019 flight, ticket, and airport data**, the goal is to decide which five routes to invest in, given a brand promise centered on punctuality (“On time, for you”).
 
 ## What Success Means
-For this analysis, a successful route must satisfy **all three** conditions below:
+A route is considered successful if it meets all of the following:
 
-1. **Profitable**  
-   The route generates positive operating profit at the route level, excluding the upfront aircraft cost.
+- **Profitable**  
+  Generates positive operating profit at the route level (excluding the upfront aircraft cost).
 
-2. **Operationally Reliable**  
-   The route demonstrates strong on-time performance and low disruption risk, consistent with a punctuality-focused brand.
+- **Operationally Reliable**  
+  Shows reasonable on-time performance and manageable delay exposure.
 
-3. **Sustainable in Volume**  
-   The route shows consistent demand across the quarter, rather than being driven by short-term spikes or isolated anomalies.
+- **Sustainable in Volume**  
+  Supported by steady demand across the quarter, not driven by isolated spikes.
 
-## Key Tradeoffs Considered
-This decision requires balancing several competing factors, none of which can be optimized in isolation:
+## Key Tradeoffs
+No single metric is sufficient on its own. The analysis balances:
 
-- **Busiest vs. Most Profitable**  
-  High-traffic routes may face congestion, delays, and competitive pressure that reduce reliability or margins.
+- **Busiest vs. Profitable**  
+  High-volume routes can suffer from congestion, higher delay costs, and operational complexity.
 
-- **Profitable vs. Punctual**  
-  Some routes may appear profitable but consistently underperform on on-time metrics, creating brand risk.
+- **Profit vs. Punctuality**  
+  Some routes appear attractive financially but carry higher risk to on-time performance.
 
 - **Scale vs. Stability**  
-  Routes with volatile demand or irregular operations may not be suitable for a dedicated aircraft.
+  Very low-volume routes may look profitable in aggregate but are less suitable for a dedicated aircraft.
 
-## What This Analysis Does Not Over-Optimize
-To stay focused and defensible, this analysis deliberately avoids:
+## What Is Not Being Optimized
+To keep the decision focused and defensible, the analysis does not attempt to:
 
-- Optimizing for short-term or one-off revenue spikes  
-- Modeling full airline network or fleet-sharing optimization  
-- Adjusting for seasonality in ticket pricing (explicitly disallowed)  
-- Using any data outside the datasets provided for this challenge  
+- Chase short-term or one-off revenue spikes  
+- Model full network effects or fleet sharing  
+- Adjust ticket prices for seasonality (explicitly disallowed)  
+- Use any data beyond what is provided in the challenge  
 
-## Hard Constraints From the Problem Statement
-All downstream analysis strictly follows these rules:
+## Hard Constraints
+All downstream analysis follows these rules:
 
 - Only **1Q2019** data is used  
 - Only **medium and large airports** are considered  
-- **Cancelled flights are excluded** from route-level metrics  
-- **Occupancy is derived only from the Flights dataset**  
-- Each aircraft is **dedicated to a single round-trip route**  
-- Punctuality is treated as a **core decision criterion**, not a secondary metric  
+- **Cancelled flights are excluded**  
+- **Occupancy comes only from the Flights dataset**  
+- Each aircraft is **dedicated to one round-trip route**  
+- Punctuality is treated as a **core decision factor**
 
 ## Decision Framing
-Each round-trip route is treated as an **independent $90M aircraft investment**.  
-The final recommendation identifies **five routes** that best balance profitability, operational reliability, and sustainable demand under these constraints.
+Each route is evaluated as an independent **$90M aircraft investment**.  
+The final output is a set of **five routes** that best balance profitability, reliability, and sustained demand under these constraints.

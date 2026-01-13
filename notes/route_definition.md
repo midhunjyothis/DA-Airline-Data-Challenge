@@ -2,18 +2,18 @@
 
 ## Definition
 A route is defined as an **unordered airport pair** between two IATA airport codes.  
-For example, JFK → ORD and ORD → JFK are treated as the same route.
+For example, JFK–ORD and ORD–JFK are treated as the same route.
 
-## Why Unordered Pairs Are Required
-The business decision is to invest in a **round-trip route served by a single dedicated aircraft**.  
-Since revenue, cost, and utilization are evaluated at the round-trip level, treating each direction separately would double-count volume and distort profitability.
+## Rationale
+Each route represents a **round-trip investment served by a single dedicated aircraft**.  
+Costs, revenue, and utilization are evaluated at the round-trip level, so treating directions separately would double-count volume and distort economics.
 
-## Edge Cases Considered
-- Directional imbalance (e.g., more demand one way than the other) is intentionally ignored at this stage, as the aircraft serves both legs of the route.
-- Routes with flights in only one direction within the quarter are excluded from round-trip metrics.
+## Handling Edge Cases
+- Directional imbalance is ignored at this stage.
+- Routes with flights in only one direction during the quarter are excluded.
 - Airport pairs are normalized alphabetically to ensure consistent grouping.
 
 ## Impact on Metrics
-- Busiest routes are counted using total round-trip flight volume, not individual legs.
-- Profitability is calculated at the route level, aggregating costs and revenue across both directions.
-- Breakeven analysis reflects the number of **round-trip cycles** required to recover the aircraft investment.
+- Route volume is measured using round-trip counts, not individual flight legs.
+- Profitability aggregates costs and revenue across both directions.
+- Breakeven reflects the number of round-trip cycles required to recover the aircraft investment.

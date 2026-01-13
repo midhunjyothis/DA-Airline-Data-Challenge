@@ -1,35 +1,35 @@
 # Ticket Price Aggregation Strategy
 
 ## Purpose
-Use the Tickets dataset to derive a reasonable route-level ticket price signal that can be combined with flight-level operational data to estimate revenue. This aggregation is intended for route screening and comparison, not precise revenue accounting.
+Derive a route-level ticket price signal from the Tickets dataset that can be combined with flight-level operational data for revenue estimation. This is intended for route screening, not precise revenue accounting.
 
 ## Unit of Aggregation
-- Route-level, defined as an unordered airport pair (origin, destination).
-- Ticket data is aggregated across all round-trip itineraries for the same route in 1Q2019.
+- Route-level, defined as an unordered airport pair.
+- Aggregation includes all round-trip itineraries for the same route in 1Q2019.
 
 ## Filters Applied
-- YEAR = 2019
-- QUARTER = 1
-- ROUNDTRIP = 1
-- Records with missing ITIN_FARE or PASSENGERS are excluded from aggregation.
+- `YEAR = 2019`
+- `QUARTER = 1`
+- `ROUNDTRIP = 1`
+- Records with missing `ITIN_FARE` or `PASSENGERS` are excluded.
 
 ## Metrics Produced
-- Average round-trip ticket fare per route
-- Total observed passengers in the sample (for context only)
-- Count of ticket records contributing to the route-level estimate
+- Average round-trip fare per route
+- Ticket record count per route
+- Observed passenger count (context only)
 
-## How This Will Be Joined to Flights
+## Join to Flights
 - Ticket metrics are joined to flight data at the route level using origin and destination IATA codes.
-- Ticket prices are treated as a route-level attribute and are not mapped to individual flight legs.
-- Occupancy is taken exclusively from the Flights dataset, not inferred from Tickets.
+- Ticket prices are treated as route attributes and are not mapped to individual flight legs.
+- Occupancy is sourced only from the Flights dataset.
 
-## Key Assumptions
-- Ticket prices are assumed to be stable within the quarter, as instructed.
-- Sample ticket data provides a directional pricing signal, even though it does not represent full market coverage.
-- Average fare is a more stable signal than max or min fare for early-stage route selection.
+## Assumptions
+- Ticket prices are stable within the quarter, per problem instructions.
+- Sample ticket data provides a directional pricing signal.
+- Average fare is preferred over extremes for early-stage route comparison.
 
-## Known Limitations
-- Ticket data is sampled and itinerary-based, not exhaustive.
-- Pricing variation by carrier, day, or time of travel is not modeled.
+## Limitations
+- Ticket data is sampled and itinerary-level.
+- Pricing variation by carrier, day, or time is not modeled.
 - Passenger counts from Tickets are not used to infer flight-level demand.
-- Revenue estimates derived from this data should be treated as approximations.
+- Revenue estimates should be treated as approximations.

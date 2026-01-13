@@ -1,40 +1,35 @@
 # KPI Recommendations
 
-These KPIs are designed to track the ongoing performance of the recommended round-trip routes, aligned with profitability, operational reliability, and a punctuality-focused brand.
-
-## Financial Performance KPIs
+## Financial Performance
 - **Profit per Round Trip**  
-  Measures unit economics of each route and ensures profitability remains above breakeven assumptions.
+  Tracks unit economics and validates breakeven assumptions.
 
 - **Total Route Profit (Quarterly)**  
-  Tracks whether each route continues to justify the dedicated aircraft investment.
+  Ensures each route continues to justify a dedicated aircraft.
 
 - **Revenue per Passenger**  
-  Helps monitor yield changes over time without relying solely on total volume.
+  Monitors yield changes independent of volume.
 
-## Operational Reliability KPIs
+## Operational Reliability
 - **On-Time Departure Rate (≤15 minutes)**  
-  Directly tied to the brand promise and avoids incremental delay costs.
+  Directly tied to the brand promise and delay-related cost exposure.
 
 - **On-Time Arrival Rate (≤15 minutes)**  
-  Complements departure punctuality and reflects end-to-end customer experience.
+  Captures end-to-end punctuality from a customer perspective.
 
 - **Average Delay Minutes per Flight**  
-  Early indicator of rising operational risk and cost pressure.
+  Early signal of rising operational risk.
 
-## Demand & Utilization KPIs
+## Demand & Utilization
 - **Average Occupancy Rate**  
   Validates demand assumptions used in revenue modeling.
 
 - **Round-Trip Utilization per Aircraft**  
-  Ensures each dedicated airplane is being used efficiently.
+  Confirms effective use of each dedicated plane.
 
-## Risk Monitoring KPIs
+## Risk Monitoring
 - **Delay Cost as % of Total Cost**  
-  Flags routes where congestion or operational issues are eroding margins.
+  Highlights routes where congestion is eroding margins.
 
-- **Airport Fee Cost per Round Trip**  
-  Helps monitor exposure to high-cost airports over time.
-
-## Why These KPIs
-These metrics directly map back to the cost and revenue components used in the analysis, allowing leadership to monitor performance, detect drift from assumptions, and intervene early if route economics deteriorate.
+- **Airport Fees per Round Trip**  
+  Tracks exposure to high-cost airports over time.
