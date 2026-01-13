@@ -1,2 +1,5 @@
 data/
 .venv/
+.vscode/
+src/__pycache__/
+development notebook.ipynb
