@@ -1,4 +1,4 @@
-# Step 3 : Join Strategy
+# Join Strategy
 
 ## Primary Dataset
 - **Flights.csv** is the primary dataset. It contains flight-leg level operations (cancellations, delays, distance/air time) and the occupancy rate required for revenue modeling.

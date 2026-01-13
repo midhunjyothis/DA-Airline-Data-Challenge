@@ -1,4 +1,4 @@
-# Step 1 : Business Understanding
+# Business Understanding
 
 ## Business Question
 An airline plans to enter the US domestic market by launching **five round-trip routes** between **medium and large airports**.  
