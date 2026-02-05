@@ -23,8 +23,8 @@
 
 ## Revenue Components
 - **Ticket revenue**
-  - Average round-trip fare derived from Tickets data
-  - Applied at the route level
+  - Average round-trip itinerary fare derived from Tickets data
+  - Applied per unique passenger per round trip (not per flight leg)
 
 - **Baggage revenue**
   - $35 per checked bag per flight leg

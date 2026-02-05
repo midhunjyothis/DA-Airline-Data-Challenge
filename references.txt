@@ -6,8 +6,6 @@ My personal Python-based analytics code vaults accumulated from prior projects, 
 
 General Python data analysis patterns that I routinely use in my work.
 
-* Also used GitHub Copilot autocomplete for comments and code not directly related to core logic or context
-
 * Referred a number of available solutions that is already been published in GitHub and Medium.
 
 I also had informal technical discussions with:

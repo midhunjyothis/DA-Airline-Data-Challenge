@@ -22,4 +22,5 @@
   Appears highly profitable in the model but driven by very low volume and sensitivity to sampled ticket data. Treated as a data artifact rather than an investable route.
 
 ## Summary
-The selected routes balance profitability, scale, and operational reliability. Preference is given to routes with sustained demand and predictable operations over extreme but fragile profit signals.
+The selected routes balance profitability, scale, and operational reliability.  
+After validating unit-level revenue assumptions, absolute profit levels changed, but route rankings and final recommendations remained stable, increasing confidence in the decision.
