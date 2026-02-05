@@ -54,7 +54,7 @@ def calculate_route_revenue(
     revenue["passengers_per_leg"] = seats_per_flight * revenue["avg_occupancy_rate"]
     revenue["passengers_per_roundtrip"] = revenue["passengers_per_leg"] * 2
 
-    revenue["ticket_revenue_per_roundtrip"] = revenue["avg_roundtrip_fare"] * revenue["passengers_per_roundtrip"]
+    revenue["ticket_revenue_per_roundtrip"] = revenue["avg_roundtrip_fare"] * revenue["passengers_per_leg"]
 
     # baggage: 50% check 1 bag per leg; $35 per bag per leg
     revenue["baggage_revenue_per_roundtrip"] = revenue["passengers_per_roundtrip"] * 0.5 * 35
