@@ -1,4 +1,4 @@
-# Capital One Airline Data Challenge
+# Airline Data Challenge
 
 This project analyzes which five US domestic round-trip routes an airline should invest in using 1Q2019 data.
 
